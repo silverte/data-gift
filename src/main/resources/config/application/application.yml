@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: data-gift
+  profiles:
+    active: local
+
+mybatis:
+  type-aliases-package: com.skcc.template.rest.sample_domain.core.domain.entity
+  mapper-locations: db/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+logging:
+  level:
+    root: debug
+#  config: classpath:config/log/logback-${spring.profiles.active}.xml

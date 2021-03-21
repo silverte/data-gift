@@ -15,8 +15,10 @@ public class DataGiftApplicationService implements DataGiftApplicationServicePor
 	@Override
 	public List<DataGiftResponseDTO> getDataGiftSendHistory(DataGiftRequestDTO dataGiftRequestDTO) {
 		// TODO Auto-generated method stub
-		List<DataGiftResponseDTO> dataGiftResponseDTO  = new ArrayList<DataGiftResponseDTO>(1);
-		return dataGiftResponseDTO;
+		List<DataGiftResponseDTO> dataGiftResponseDTOList  = new ArrayList<DataGiftResponseDTO>();
+		DataGiftResponseDTO dataGiftResponseDTO = new DataGiftResponseDTO(1);
+		dataGiftResponseDTOList.add(dataGiftResponseDTO);
+		return dataGiftResponseDTOList;
 	}
 
 }

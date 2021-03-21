@@ -1,8 +1,8 @@
 package com.sktelecom.product.datagift.core.appication.dto;
 
-import lombok.Setter;
+import lombok.Getter;
 
-@Setter
+@Getter
 public class DataGiftResponseDTO {
 	private Integer svcMgmtNum;
 	private Integer befrSvcMgmtNum;
@@ -18,7 +18,7 @@ public class DataGiftResponseDTO {
 	private String dataGiftTypCd;
 	private String afmlyGiftYn; 
 	
-	DataGiftResponseDTO(Integer svcMgmtNum){
+	public DataGiftResponseDTO(Integer svcMgmtNum){
 		this.svcMgmtNum = svcMgmtNum;
 	}
 }
